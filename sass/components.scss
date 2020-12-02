@@ -1,0 +1,228 @@
+.btn{
+    text-align: center;
+    padding:1rem;
+    a{
+        display: block;
+        text-decoration: none;
+    }
+}
+
+.btn-shop{
+    border:1px solid $color-black;
+    width: 250px;
+    a{
+        width: inherit;
+    }
+}
+
+// MAIN TEXT
+
+.main-text{
+    text-align: center;
+    margin: 0 auto 19rem;
+    padding: 0 5%;
+    @media screen and (min-width: 980px){
+        width: 56%;
+        padding: 0;
+    }
+    img{
+        margin-bottom: 9.5rem;
+    }
+    p{
+        font-family: 'Baskervville', serif;
+        font-size: 4rem;
+        font-style: italic;
+        color:#bbddcb;
+        line-height: 6rem;
+        letter-spacing: .08rem;
+        span{
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            color:#d7b6c1;
+            font-style: normal;
+            font-weight: 300;
+        }
+    }
+}
+
+// DISCOVER COLLECTION
+
+.discover-collection{
+    text-align: center;
+    height: 80vh;
+    background-color: $color-green;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color:$color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    h2{
+        text-transform: uppercase;
+        font-size: 6.1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        letter-spacing: .09rem;
+        span{
+            display: block;
+            font-family: 'Baskervville', serif;
+            font-size: 3rem;
+            font-style: italic;
+            text-transform: none;
+        }
+    }
+    a{
+        color:$color-white;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 7.8rem;
+        width: auto;
+        display: block;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+.bloom-collection{
+    background-image: url("../images/discover-collection/bloom-collection.jpg");
+}
+
+.origens-collection{
+    background-image: url("../images/discover-collection/origens-collection.jpg");
+}
+
+// GRID IMAGE
+
+.grid-image{
+    padding:19rem 0;
+    margin: 0 auto;
+    .container-grid{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 50px 0;
+        div{
+            height: auto;
+            overflow: hidden;
+            margin: 0 auto;
+            @media screen and (min-width: 900px){
+                width: 350px;
+                height: 445px;
+            }
+            a{
+                img{
+                    object-fit: cover;
+                    opacity: 1;
+                    transition: all .3s ease-in-out;
+                    width: 100%;
+                    &:hover{
+                        transform: scale(1.10);
+                        opacity: .65;
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 900px){
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 908px;
+            gap: 50px 50px;
+            div:nth-child(2){
+                margin-top: 5rem;
+            }
+            div:nth-child(3){
+                margin-top: -5rem;
+            }
+        }
+    }
+}
+
+.grid-image--roberta{
+    background-color:$color-green;
+    .container-grid{
+        div{
+            background-color:inherit;
+        }
+    }
+}
+
+.grid-image--bloom{
+    background-color: #badee8;
+    .container-grid{
+        div{
+            background-color:inherit;
+        }
+    }
+}
+
+.grid-image--origens{
+    background-color: #e8daf6;
+    .container-grid{
+        div{
+            background-color:inherit;
+        }
+    }
+}
+
+// LISTA PRODUTOS
+
+.slider-produtos{
+    padding: 18rem;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    @media screen and (min-width: 1200px){
+        margin-left: 30rem;
+    }
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 445px;
+}
+
+// SUB FOOTER
+
+.sub-footer{
+    background-color: $color-white;
+    padding:1.85rem 0;
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        color:#5a5a5a;
+        font-family: 'Montserrat', sans-serif;
+        @media screen and (min-width: 900px){
+            justify-content: space-around;
+            flex-direction: row;
+        }
+    }
+}

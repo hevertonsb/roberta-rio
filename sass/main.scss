@@ -1,0 +1,157 @@
+@import "variables";
+@import "header";
+@import "components";
+@import "footer";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*::selection{
+    background-color: $color-green;
+    color:$color-white;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.wrap{
+    box-sizing: border-box;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding:0 5%;
+}
+
+.simple-link{
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: block;
+    color:$color-white;
+    font-size: 1.239rem;
+}
+
+.img-hei{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 72px;
+        height: 60px;
+        background: url("../images/decora-hei.png") no-repeat;
+        left: -3.6rem;
+        bottom: -2.5rem;
+    }
+}
+
+// HOME
+
+.meet-roberta{
+    background-color: $color-orange;
+    padding:12.5rem 0;
+    .wrap{
+        @media screen and (min-width: 1200px){
+            padding: 0;
+        }
+        .row-container{
+            color:#fcfcfc;
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width: 900px){
+                flex-direction: row;
+            }
+            .box-text{
+                span{
+                    font-size: 2.6rem;
+                    font-family: 'Montserrat', sans-serif;
+                    margin-left:2.5rem;
+                    color:#fffbcc;
+                }
+                h2{
+                    text-transform: uppercase;
+                    font-size: 4rem;
+                    font-family: 'Baskervville', serif;
+                    font-weight: normal;
+                    font-style: italic;
+                    margin:0;
+                    letter-spacing: .4rem;
+                    word-spacing: 1rem;
+                    @media screen and (min-width: 900px){
+                        font-size: 6rem;
+                    }
+                }
+                p{
+                    font-size: 2.4rem;
+                    text-align: center;
+                    font-style: italic;
+                    line-height: 3.4rem;
+                    letter-spacing: .08rem;
+                    em{
+                        color:#e8daf6;
+                        font-style: normal;
+                    }
+                    @media screen and (min-width: 900px){
+                        width: 350px;
+                        margin: 8rem auto;
+                    }
+                }
+                @media screen and (min-width: 900px){
+                    margin-right: 7rem;
+                    width: 50%;
+                }
+            }
+            .image-main{
+                img{
+                    width: 100%;
+                }
+                @media screen and (min-width: 900px){
+                    width: 455px;
+                }
+            }
+        }
+    }
+}
+
+.meet-roberta{
+    .wrap{
+        .row-reverse{
+            @media screen and (min-width: 900px){
+                flex-direction: row-reverse;
+                margin-top: 6.7rem;
+            }
+            margin-top: 3rem;
+            .box-text{
+                @media screen and (min-width: 900px){
+                    margin-left: 7rem;
+                    margin-right: 0;
+                }
+                p{
+                    text-align: left;
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-family: 'Montserrat', sans-serif;
+                    line-height: 2.5rem;
+                    @media screen and (min-width: 900px){
+                        width: 300px;
+                    }
+                    a{
+                        @media screen and (min-width: 900px){
+                            padding-top: 4.5rem;
+                        }
+                    }
+                }
+            }
+            .image-main{
+                position: relative;
+                @media screen and (min-width: 900px){
+                    width: 362px;
+                    height: 362px;
+                }
+            }
+        }
+    }
+}
+
