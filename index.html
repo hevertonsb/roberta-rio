@@ -11,10 +11,73 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+    <div class="slider-container">
+        <div class="slider-control left inactive"></div>
+        <div class="slider-control right"></div>
+        <ul class="slider-pagi"></ul>
+        <div class="slider">
+
+            <div class="slide slide-0 active">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 250,0 250,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <!-- <h2 class="slide__text-heading">Project name 1</h2> -->
+                        <!-- <img src="images/grid-bloom/bloom-01.jpg" alt=""> -->
+                        <!-- <a class="slide__text-link">Project link</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide-1 ">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 250,0 250,405 0,405" />
+                    </svg>
+                    <!-- <div class="slide__text">
+                        <h2 class="slide__text-heading">Project name 2</h2>
+                        <a class="slide__text-link">Project link</a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- <div class="slide slide-2">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">Project name 3</h2>
+                        <a class="slide__text-link">Project link</a>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="slide slide-3">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">Project name 4</h2>
+                        <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+                        <a class="slide__text-link">Project link</a>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
 
     <section class="grid-image grid-image--roberta">
         <div class="main-text">
@@ -44,7 +107,7 @@
             </div>
         </div>
         <div class="btn btn-shop">
-            <a href="">Shop Bloom collection</a>
+            <a href="">Shop Fragmentos collection</a>
         </div>
     </section>
 
@@ -109,10 +172,12 @@
                 </a>
             </div>
         </div>
+        <div class="btn btn-shop">
+            <a href="">Shop Origens collection</a>
+        </div>
     </section>
 
-    <section class="slider-produtos">
-        
+    <!-- <section class="slider-produtos"> -->
             <!-- Slider main container -->
             <div class="swiper-container">
                 <!-- Additional required wrapper -->
@@ -121,7 +186,7 @@
                     <div class="swiper-slide">
                         <img src="images/grid-bloom/bloom-01.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                         <img src="images/grid-bloom/bloom-01.jpg" alt="">
                     </div>
                     <div class="swiper-slide">
@@ -132,7 +197,7 @@
                     </div>
                     <div class="swiper-slide">
                         <img src="images/grid-bloom/bloom-01.jpg" alt="">
-                    </div>
+                    </div> -->
                 </div>
                 <!-- If we need pagination -->
                 <!-- <div class="swiper-pagination"></div> -->
@@ -145,7 +210,7 @@
                 <!-- <div class="swiper-scrollbar"></div> -->
             </div>
         
-    </section>
+    <!-- </section> -->
 
     <section class="meet-roberta">
         <div class="wrap">
@@ -176,8 +241,40 @@
     </section>
 
     <footer>
-        <div class="wrap">
-            Footer
+        <div class="wrap footer-content">
+            <div class="logo-footer">
+                <a href="">
+                    <img src="images/logo-footer.png" alt="">
+                </a>
+            </div>
+            <div>
+                <ul class="list-links">
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Shipping</a></li>
+                    <li><a href="">Return & Refund Policy</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="sub-title">Follow</h4>
+                <ul class="list-links">
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="form-news">
+                <h4 class="sub-title">Join our newsletter</h4>
+                <div class="form-footer">
+                    <form action="">
+                        <input type="email" name="" id="" placeholder="enter your e-mail" required>
+                        <button type="submit">Ok</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="wrap sub-content-footer">
+            <p>made with <img src="images/heart.png" alt=""> in <span>Ipanema</span></p>
         </div>
     </footer>
 
@@ -193,7 +290,8 @@
     </section>
 
     <script src="scripts/jquery-3.5.1.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="scripts/slider.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

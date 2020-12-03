@@ -1,5 +1,6 @@
 @import "variables";
 @import "header";
+@import "slider";
 @import "components";
 @import "footer";
 
@@ -19,11 +20,21 @@ html {
     font-size: 62.5%;
 }
 
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
 .wrap{
     box-sizing: border-box;
     max-width: 1230px;
     margin: 0 auto;
     padding:0 5%;
+    // border:1px solid red;
+    // @media screen and (min-width: 1200px){
+    //     padding:0;
+    // }
 }
 
 .simple-link{
@@ -55,6 +66,7 @@ html {
     .wrap{
         @media screen and (min-width: 1200px){
             padding: 0;
+            max-width: 1130px;
         }
         .row-container{
             color:#fcfcfc;
@@ -99,8 +111,8 @@ html {
                     }
                 }
                 @media screen and (min-width: 900px){
-                    margin-right: 7rem;
-                    width: 50%;
+                    margin-right: 6rem;
+                    width: 54%;
                 }
             }
             .image-main{
@@ -125,7 +137,7 @@ html {
             margin-top: 3rem;
             .box-text{
                 @media screen and (min-width: 900px){
-                    margin-left: 7rem;
+                    margin-left: 4rem;
                     margin-right: 0;
                 }
                 p{
@@ -135,7 +147,8 @@ html {
                     font-family: 'Montserrat', sans-serif;
                     line-height: 2.5rem;
                     @media screen and (min-width: 900px){
-                        width: 300px;
+                        width: 350px;
+                        margin-left: 20rem;
                     }
                     a{
                         @media screen and (min-width: 900px){
