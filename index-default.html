@@ -11,10 +11,80 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+    <header class="header">
+        <div class="wrap">
+            <div class="logo">
+                <a href="">
+                    <img src="images/roberta-rio-logo.png" alt="">
+                </a>
+            </div>
+            <nav class="main-menu">
+                <ul class="nav">
+                    <li class="button-dropdown">
+                        <!-- <a href="javascript:void(0)" class="dropdown-toggle">
+                            Shop <span>▼</span>
+                        </a> -->
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            Drop Item 1
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            Drop Item 2
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            Drop Item 3
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#"><img src="images/sacola.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/perfil.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/menu-hamburguer.png" alt=""></a></li>
+                  </ul>
+                <!-- <ul class="nav-menu">
+                    <li><a href="">Shop</a>
+                        <ul class="dropdown">
+                            <div class="dropdown-content">
+                                <div class="joias">
+                                    <h4>Joias</h4>
+                                    <ul>
+                                        <li><a href="">brincos</a></li>
+                                        <li><a href="">pingente</a></li>
+                                        <li><a href="">aneis</a></li>
+                                        <li><a href="">alianças</a></li>
+                                        <li><a href="">colares</a></li>
+                                        <li><a href="">one of a kind</a></li>
+                                    </ul>
+                                </div>
+                                <div class="colecoes">
+                                    <h4>Coleções</h4>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="">
+                        <img src="images/sacola.png" alt="">
+                    </a></li>
+                    <li><a href="">
+                        <img src="images/perfil.png" alt="">
+                    </a></li>
+                    <li><a href="">
+                        <img src="images/menu-hamburguer.png" alt="">
+                    </a></li>
+                </ul> -->
+            </nav>
+        </div>
+    </header>
 
     <div class="slider-container">
         <div class="slider-control left inactive"></div>
@@ -129,8 +199,8 @@
                 </a>
             </div>
         </div>
-        <div class="btn btn-shop">
-            <a href="">Shop Fragmentos collection</a>
+        <div class="btn btn-shop btn-rr">
+            <a href="">Shop Fragmentos collection <i class="arrow-btn"></i></a>
         </div>
     </section>
 
@@ -164,7 +234,7 @@
             </div>
         </div>
         <div class="btn btn-shop">
-            <a href="">Shop Bloom collection</a>
+            <a href="">Shop Bloom collection <i class="arrow-btn"></i></a>
         </div>
     </section>
 
@@ -198,44 +268,73 @@
             </div>
         </div>
         <div class="btn btn-shop">
-            <a href="">Shop Origens collection</a>
+            <a href="">Shop Origens collection <i class="arrow-btn"></i></a>
         </div>
     </section>
 
-    <!-- <section class="slider-produtos"> -->
-            <!-- Slider main container -->
-            <!-- <div class="swiper-container"> -->
-                <!-- Additional required wrapper -->
-                <!-- <div class="swiper-wrapper"> -->
-                    <!-- Slides -->
-                    <!-- <div class="swiper-slide">
-                        <img src="images/grid-bloom/bloom-01.jpg" alt="">
-                    </div> -->
-                    <!-- <div class="swiper-slide">
-                        <img src="images/grid-bloom/bloom-01.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/grid-bloom/bloom-01.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/grid-bloom/bloom-01.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/grid-bloom/bloom-01.jpg" alt="">
-                    </div> -->
-                <!-- </div> -->
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
+    <section class="slider-produtos">
+        <div class="swiper-container">
 
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
+            <div class="swiper-txt swiper-txt-mobile">
+                <span>roberta's</span>
+                <h2>Picks</h2>
+            </div>
+            
+            <div class="swiper-wrapper">
+                <div class="swiper-txt swiper-slide">
+                    <span>roberta's</span>
+                    <h2>Picks</h2>
+                </div>
 
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
-            <!-- </div> -->
-        
-    <!-- </section> -->
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/grid-roberta/roberta-02.jpg" alt="">
+                    </a>
+                    <div class="info-produto">
+                        <p>Brinco Flower</p>
+                        <i class="heart-swiper"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/grid-bloom/bloom-02.jpg" alt="">
+                    </a>
+                    <div class="info-produto">
+                        <p>Brinco Flower</p>
+                        <i class="heart-swiper"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/grid-origens/origens-04.jpg" alt="">
+                    </a>
+                    <div class="info-produto">
+                        <p>Brinco Flower</p>
+                        <i class="heart-swiper"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/produto-example.jpg" alt="">
+                    </a>
+                    <div class="info-produto">
+                        <p>Brinco Flower</p>
+                        <i class="heart-swiper"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/produto-example.jpg" alt="">
+                    </a>
+                    <div class="info-produto">
+                        <p>Brinco Flower</p>
+                        <i class="heart-swiper"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
     <section class="meet-roberta">
         <div class="wrap">
@@ -315,7 +414,7 @@
     </section>
 
     <script src="scripts/jquery-3.5.1.min.js"></script>
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/slider.js"></script>
     <script src="scripts/main.js"></script>
 </body>

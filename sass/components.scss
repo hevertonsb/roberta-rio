@@ -2,8 +2,15 @@
     text-align: center;
     // padding:1rem;
     a{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-decoration: none;
+        height: 4rem;
+        transition: all .3s ease-in;
+        &:hover{
+            font-weight: bold;
+        }
     }
 }
 
@@ -14,12 +21,53 @@
     border:1px solid $color-black;
     width: 250px;
     height: 4rem;
-    margin: 10rem auto;
+    margin: 5rem auto 0;
     font-size: 1.2rem;
     a{
         width: inherit;
         color:#293133;
         font-family: 'Montserrat', sans-serif;
+        .arrow-btn{
+            // animation: arrow-pulse 700ms linear infinite;
+            background: url('../images/arrow-btn-shop.png') no-repeat;
+            width: 18px;
+            height: 12px;
+            display: inline-block;
+            margin-left: .5rem;
+            &:hover{
+                background-color: red;
+            }
+        }
+    }
+}
+
+.btn-rr{
+    border:1px solid #fffbcc;
+    a{
+        color:#fffbcc;
+        .arrow-btn{
+            background: url('../images/arrow-btn-shop-intro.png') no-repeat;
+        }
+    }
+}
+
+@keyframes arrow-pulse {
+    0% {
+        left: 40px;
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        left: 20px;
+        opacity: 1;
     }
 }
 
@@ -111,7 +159,7 @@
 // GRID IMAGE
 
 .grid-image{
-    padding:19rem 0;
+    padding:10rem 0;
     margin: 0 auto;
     .container-grid{
         margin: auto;
@@ -187,40 +235,111 @@
 
 // LISTA PRODUTOS
 
-// .slider-produtos{
-    
-// }
-
-.swiper-container {
-    padding: 18rem;
+.slider-produtos{
+    padding: 10rem 0;
     background-color: #f5f5f5;
-    // width: 100%;
-    // height: 100%;
-    // @media screen and (min-width: 1200px){
-    //     margin-left: 30rem;
-    //     overflow: hidden;
-    // }
+    overflow: hidden;
 }
 
-.swiper-slide {
-    text-align: center;
-    background-color: #f5f5f5;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
+.swiper-wrapper{
     align-items: center;
-    flex-direction: column;
-    // width: 350px;
-    // height: 445px;
+    @media screen and (min-width: 1200px){
+        position: relative;
+        right: 7rem;
+    }
+   
+}
+
+.swiper-container{
+    margin:0 5%;
+    overflow: initial;
+}
+
+.swiper-slide{
+    // background:red;
+    // margin:0 8rem !important;
+    a{
+        color:#3c3c3c;
+        text-decoration: none;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+.swiper-pagination{
+    position: relative;
+}
+
+.swiper-pagination-bullet-active{
+    background: $color-green;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    margin:3.5rem 0 0;
+}
+
+.swiper-txt{
+    span{
+        margin: 0;
+        font-size: 3rem;
+        color:$color-pink;
+        font-family: 'Montserrat', sans-serif;
+        padding-left: 3rem;
+        font-weight: normal;
+    }
+    h2{
+        font-size: 7.8rem;
+        text-transform: uppercase;
+        color:$color-green;
+        font-family: 'Baskervville', serif;
+        font-weight: normal;
+        font-style: italic;
+        margin: 0;
+    }
+    @media screen and (max-width: 899px){
+        display: none;
+    }
+    @media screen and (min-width: 900px){
+        display: block;
+        position: relative;
+        left:22rem;
+        z-index: 2;
+    }
+}
+
+.swiper-txt-mobile{
+    @media screen and (max-width: 899px){
+        display: block;
+        margin: 1rem 0;
+    }
+    @media screen and (min-width: 900px){
+        display: none;
+    }
+}
+
+.info-produto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:.5rem 1.25rem;
+    p{
+        font-family: 'Montserrat', sans-serif;
+    }
+    .heart-swiper{
+        background: url("../images/heart-off-swiper.png");
+        background-position: no-repeat;
+        width: 17px;
+        height: 14px;
+        cursor: pointer;
+        transition: all .3s ease-in;
+        &:hover{
+            background: url("../images/heart-on-swiper.png");
+        }
+    }
+    .heart-swiper.active{
+        background: url("../images/heart-on-swiper.png");
+    }
 }
 
 // SUB FOOTER
