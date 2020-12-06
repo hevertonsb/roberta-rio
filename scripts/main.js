@@ -40,30 +40,24 @@ var mySwiper = new Swiper('.swiper-container', {
 $(document).ready(function(e) {
 	$('.heart-swiper').click(function(e){
 		e.preventDefault();
-		$(this).toggleClass('active')
-		console.log('eee')
+		$(this).toggleClass('active');
+	})
+	
+	$('.menu-drop').on('mouseenter', function(event){
+		$(this).addClass('menu-drop-active')
+	}).on('mouseleave', function(event){
+		$(this).removeClass('menu-drop-active')
 	})
 
-	function t(t) {
-        e(t).bind("click", function (t) {
-            t.preventDefault();
-            e(this).parent().fadeOut()
-        })
-    }
-    e(".dropdown-toggle").hover(function () {
-        var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
-        e(".button-dropdown .dropdown-menu").hide();
-        e(".button-dropdown .dropdown-toggle").removeClass("active");
-        if (t) {
-            e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active")
-        }
-    });
-    e(document).bind("click", function (t) {
-        var n = e(t.target);
-        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
-    });
-    e(document).bind("click", function (t) {
-        var n = e(t.target);
-        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
-    })
+	$('.mega-box').on('mouseenter', function(event){
+		$('.menu-drop').addClass('menu-drop-active')
+	}).on('mouseleave', function(event){
+		$('.menu-drop').removeClass('menu-drop-active')
+	})
+
+	$(document).scroll(function () {
+		var $nav = $(".main-nav");
+		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+		
 })

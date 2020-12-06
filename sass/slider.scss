@@ -377,7 +377,7 @@ svg {
 					display: flex;
 					flex-direction: inherit;
 					justify-content: center;
-					padding-top: 4rem;
+					padding-top: 10rem;
 					height: 100vh;
 					p, a{
 						text-align: left;
@@ -385,6 +385,8 @@ svg {
 					.img-slide{
 						display: block;
 						margin-right: 8rem;
+						width: 200px;
+						height: 300px;
 						// @media screen and (min-width: 900px){
 						// 	margin-right: 8rem;
 						// 	display: block;

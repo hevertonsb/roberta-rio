@@ -7,9 +7,9 @@
         align-items: center;
         text-decoration: none;
         height: 4rem;
-        transition: all .3s ease-in;
+        transition: all .2s ease-in;
         &:hover{
-            font-weight: bold;
+            transform: translate(10px);
         }
     }
 }
@@ -35,7 +35,7 @@
             display: inline-block;
             margin-left: .5rem;
             &:hover{
-                background-color: red;
+                transform: scale(2);
             }
         }
     }
@@ -142,6 +142,9 @@
         margin-bottom: 7rem;
         width: auto;
         display: block;
+        @media screen and (max-width: 780px){
+            margin-bottom: 3rem;
+        }
         &:hover{
             text-decoration: none;
         }
