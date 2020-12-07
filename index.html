@@ -10,13 +10,11 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
     <nav class="main-nav">
         <div class="wrapper">
             <div class="logo">
@@ -29,7 +27,8 @@
                 <input type="radio" name="slider" id="menu-btn">
                 <input type="radio" name="slider" id="close-btn">
                 <ul class="nav-links">
-                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <label for="close-btn" class="btn close-btn"></label>
+                    <!-- <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label> -->
                     <li>
                         <a href="#" class="desktop-item menu-drop">Shop</a>
                         <input type="checkbox" id="showMega">
@@ -39,30 +38,30 @@
                                 <div class="row box-jleft">
                                     <h3>Joias</h3>
                                     <ul class="mega-links">
-                                        <li><a href="">brincos</a></li>
-                                        <li><a href="">pingente</a></li>
-                                        <li><a href="">aneis</a></li>
-                                        <li><a href="">alianças</a></li>
-                                        <li><a href="">colares</a></li>
-                                        <li><a href="">one of a kind</a></li>
+                                        <li><a href="" data-filename="bloom-01.jpg">brincos</a></li>
+                                        <li><a href="" data-filename="bloom-02.jpg">pingente</a></li>
+                                        <li><a href="" data-filename="bloom-03.jpg">aneis</a></li>
+                                        <li><a href="" data-filename="bloom-04.jpg">alianças</a></li>
+                                        <li><a href="" data-filename="bloom-01.jpg">colares</a></li>
+                                        <li><a href="" data-filename="bloom-02.jpg">one of a kind</a></li>
                                     </ul>
                                 </div>
                                 <div class="row">
                                     <h3>Coleções</h3>
                                     <ul class="mega-links">
-                                        <li><a href="#">marrocos</a></li>
-                                        <li><a href="#">fragmentos</a></li>
-                                        <li><a href="#">origens</a></li>
-                                        <li><a href="#">fire spell</a></li>
-                                        <li><a href="#">bloom</a></li>
-                                        <li><a href="#">jardim particular</a></li>
-                                        <li><a href="#">power</a></li>
-                                        <li><a href="#">encontros</a></li>
-                                        <li><a href="#">solei</a></li>
-                                        <li><a href="#">amuletos</a></li>
+                                        <li><a href="#" data-filename="bloom-01.jpg">marrocos</a></li>
+                                        <li><a href="#" data-filename="bloom-03.jpg">fragmentos</a></li>
+                                        <li><a href="#" data-filename="bloom-02.jpg">origens</a></li>
+                                        <li><a href="#" data-filename="bloom-01.jpg">fire spell</a></li>
+                                        <li><a href="#" data-filename="bloom-03.jpg">bloom</a></li>
+                                        <li><a href="#" data-filename="bloom-02.jpg">jardim particular</a></li>
+                                        <li><a href="#" data-filename="bloom-01.jpg">power</a></li>
+                                        <li><a href="#" data-filename="bloom-02.jpg">encontros</a></li>
+                                        <li><a href="#" data-filename="bloom-02.jpg">solei</a></li>
+                                        <li><a href="#" data-filename="bloom-03.jpg">amuletos</a></li>
                                     </ul>
                                 </div>
-                                <div class="row">
+                                <div class="row image-box">
                                     <img src="images/slides/slide-01.jpg" alt="">
                                 </div>
                             </div>
@@ -85,7 +84,7 @@
         <ul class="slider-pagi"></ul>
 
         <!-- add slider-default or slider-htr -->
-        <div class="slider slider-htr">
+        <div class="slider slider-default">
 
             <div class="slide slide-0 active">
                 <div class="slide__bg"></div>
@@ -193,7 +192,9 @@
             </div>
         </div>
         <div class="btn btn-shop btn-rr">
-            <a href="" class="close">Shop Fragmentos collection <i class="arrow-btn"></i></a>
+            <a href="" class="close">Shop Fragmentos collection 
+                <i class="arrow-btn"></i>
+            </a>
         </div>
     </section>
 

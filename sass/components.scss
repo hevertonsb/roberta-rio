@@ -9,7 +9,8 @@
         height: 4rem;
         transition: all .2s ease-in;
         &:hover{
-            transform: translate(10px);
+            background-color: rgba(0, 0, 0, .25);
+            // color:$color-white;
         }
     }
 }
@@ -29,14 +30,11 @@
         font-family: 'Montserrat', sans-serif;
         .arrow-btn{
             // animation: arrow-pulse 700ms linear infinite;
-            background: url('../images/arrow-btn-shop.png') no-repeat;
+            background:url('../images/arrow-btn-shop.png') no-repeat;
             width: 18px;
             height: 12px;
             display: inline-block;
             margin-left: .5rem;
-            &:hover{
-                transform: scale(2);
-            }
         }
     }
 }
@@ -47,6 +45,7 @@
         color:#fffbcc;
         .arrow-btn{
             background: url('../images/arrow-btn-shop-intro.png') no-repeat;
+            color:inherit;
         }
     }
 }
@@ -132,6 +131,9 @@
         text-transform: none;
         margin: .5rem 0 3rem;
         letter-spacing: .4rem;
+        @media screen and (max-width: 780px){
+            margin-bottom: 2rem;
+        }
     }
     a{
         color:$color-white;
@@ -143,7 +145,7 @@
         width: auto;
         display: block;
         @media screen and (max-width: 780px){
-            margin-bottom: 3rem;
+            margin-bottom: 5rem;
         }
         &:hover{
             text-decoration: none;
@@ -330,18 +332,16 @@
         font-family: 'Montserrat', sans-serif;
     }
     .heart-swiper{
-        background: url("../images/heart-off-swiper.png");
-        background-position: no-repeat;
-        width: 17px;
-        height: 14px;
+        background-image: url("../images/svg/heart-off.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 2.6rem;
+        height: 2.1rem;
         cursor: pointer;
-        transition: all .3s ease-in;
-        &:hover{
-            background: url("../images/heart-on-swiper.png");
-        }
+        // transition: all .3s ease-in;
     }
     .heart-swiper.active{
-        background: url("../images/heart-on-swiper.png");
+        background-image: url("../images/svg/heart-on.svg");
     }
 }
 

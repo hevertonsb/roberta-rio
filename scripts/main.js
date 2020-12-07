@@ -32,9 +32,7 @@ var mySwiper = new Swiper('.swiper-container', {
 			slidesPerView: 4,
 			spaceBetween: 50
 		}
-
 	}
-	// slidesOffsetBefore: 100
 })
 
 $(document).ready(function(e) {
@@ -59,5 +57,18 @@ $(document).ready(function(e) {
 		var $nav = $(".main-nav");
 		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 	});
+
+	var scrImageBox = $('.image-box img').attr('src');
+	$('.mega-links li a').hover(
+		function(){
+			var linkIndex = $(this).attr("data-filename");
+			$(this).addClass('hover');
+			$('.image-box img').attr('src', 'images/grid-bloom/' + linkIndex);
+		},
+		function(){
+			$(this).removeClass('hover');
+			$('.image-box img').attr('src', scrImageBox);
+		}
+	);
 		
 })

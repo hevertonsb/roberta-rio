@@ -9,7 +9,7 @@ nav{
 nav .wrapper{
 	position: relative;
 	max-width: 1300px;
-	padding: 0px 30px;
+	padding: 0px 20px;
 	// height: 70px;
 	// line-height: 70px;
 	margin: auto;
@@ -105,8 +105,8 @@ nav .wrapper .nav-content{
 	width: 70%;
 	padding: 0 30px;
 	top: 90px;
-	opacity: 0;
-	visibility: hidden;
+	// opacity: 0;
+	// visibility: hidden;
 }
 
 .mega-box .content{
@@ -192,9 +192,12 @@ display: none;
 padding-left: 1rem;
 }
 .wrapper .btn.close-btn{
-position: absolute;
-right: 30px;
-top: 10px;
+	position: absolute;
+	right: 1.5rem;
+	top: 1.5rem;
+	background: url('../images/svg/close-menu.svg') no-repeat;
+	width: 2.6rem;
+	height: 2.6rem;
 }
 
 @media screen and (max-width: 970px) {
@@ -315,7 +318,7 @@ top: 10px;
 	flex-direction: column;
 }
 .row .mega-links li{
-	margin: 1rem 0;
+	margin: 1.5rem 0;
 	a{
 		font-size: 1.6rem;
 	}
