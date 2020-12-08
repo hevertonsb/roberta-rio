@@ -11,15 +11,15 @@
    id="Capa_1"
    x="0px"
    y="0px"
-   viewBox="0 0 391.837 391.837"
-   style="enable-background:new 0 0 391.837 391.837;"
+   viewBox="0 0 512 512"
+   style="enable-background:new 0 0 512 512;"
    xml:space="preserve"
-   sodipodi:docname="heart-on.svg"
+   sodipodi:docname="menu-hamburguer.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"><metadata
-   id="metadata41"><rdf:RDF><cc:Work
+   id="metadata55"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
-   id="defs39" /><sodipodi:namedview
+   id="defs53" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -30,43 +30,50 @@
    inkscape:pageshadow="2"
    inkscape:window-width="1600"
    inkscape:window-height="837"
-   id="namedview37"
+   id="namedview51"
    showgrid="false"
-   inkscape:zoom="1.3730199"
-   inkscape:cx="195.9185"
-   inkscape:cy="195.9185"
+   inkscape:zoom="1.0507812"
+   inkscape:cx="256"
+   inkscape:cy="256"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
    inkscape:current-layer="Capa_1" />
 <g
+   id="g6"
+   style="fill:#ffffff">
+	<g
    id="g4"
-   style="fill:#fe6c2d;fill-opacity:1">
-	<path
-   style="fill:#fe6c2d;fill-opacity:1"
-   d="M285.257,35.528c58.743,0.286,106.294,47.836,106.58,106.58   c0,107.624-195.918,214.204-195.918,214.204S0,248.165,0,142.108c0-58.862,47.717-106.58,106.58-106.58l0,0   c36.032-0.281,69.718,17.842,89.339,48.065C215.674,53.517,249.273,35.441,285.257,35.528z"
-   id="path2" />
+   style="fill:#ffffff">
+		<path
+   d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z"
+   id="path2"
+   style="fill:#ffffff" />
+	</g>
 </g>
 <g
-   id="g6">
+   id="g12"
+   style="fill:#ffffff">
+	<g
+   id="g10"
+   style="fill:#ffffff">
+		<path
+   d="M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z"
+   id="path8"
+   style="fill:#ffffff" />
+	</g>
 </g>
 <g
-   id="g8">
-</g>
-<g
-   id="g10">
-</g>
-<g
-   id="g12">
-</g>
-<g
-   id="g14">
-</g>
-<g
-   id="g16">
-</g>
-<g
-   id="g18">
+   id="g18"
+   style="fill:#ffffff">
+	<g
+   id="g16"
+   style="fill:#ffffff">
+		<path
+   d="M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20    C512,404.954,503.046,396,492,396z"
+   id="path14"
+   style="fill:#ffffff" />
+	</g>
 </g>
 <g
    id="g20">
@@ -91,5 +98,26 @@
 </g>
 <g
    id="g34">
+</g>
+<g
+   id="g36">
+</g>
+<g
+   id="g38">
+</g>
+<g
+   id="g40">
+</g>
+<g
+   id="g42">
+</g>
+<g
+   id="g44">
+</g>
+<g
+   id="g46">
+</g>
+<g
+   id="g48">
 </g>
 </svg>

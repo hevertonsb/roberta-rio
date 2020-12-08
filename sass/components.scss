@@ -30,7 +30,7 @@
         font-family: 'Montserrat', sans-serif;
         .arrow-btn{
             // animation: arrow-pulse 700ms linear infinite;
-            background:url('../images/arrow-btn-shop.png') no-repeat;
+            // background:url('../images/arrow-btn-shop.png') no-repeat;
             width: 18px;
             height: 12px;
             display: inline-block;
@@ -44,7 +44,7 @@
     a{
         color:#fffbcc;
         .arrow-btn{
-            background: url('../images/arrow-btn-shop-intro.png') no-repeat;
+            // background: url('../images/arrow-btn-shop-intro.png') no-repeat;
             color:inherit;
         }
     }
@@ -82,6 +82,7 @@
     }
     img{
         margin-bottom: 9.5rem;
+        margin-top: 5rem;
     }
     p{
         font-family: 'Baskervville', serif;

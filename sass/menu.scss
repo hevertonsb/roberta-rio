@@ -31,7 +31,7 @@ nav .wrapper .icons-nav{
 	a{
 		margin:0 1rem;
 		height: auto;
-		width: 100%;
+		width: 1.8rem;
 	}
 	
 }
@@ -207,6 +207,8 @@ padding-left: 1rem;
 @media screen and (max-width: 970px) {
 .wrapper .btn{
 	display: block;
+	width: 4rem;
+    height: auto;
 }
 .wrapper .nav-links{
 	position: fixed;
