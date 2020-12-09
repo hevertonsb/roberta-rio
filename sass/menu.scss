@@ -30,8 +30,14 @@ nav .wrapper .icons-nav{
 	display: flex;
 	a{
 		margin:0 1rem;
-		height: auto;
+		height: 1.8rem;
 		width: 1.8rem;
+		overflow: hidden;
+		img{
+			width: 100%;
+			height: 100%;
+    		overflow: hidden;
+		}
 	}
 	
 }
@@ -169,7 +175,7 @@ nav .wrapper .nav-content{
 }
 
 .row .mega-links li{
-	// padding: 0 20px;
+	width: 50%;
 }
 
 .row .mega-links li a{
@@ -371,6 +377,7 @@ font-weight: 600;
 				display: block;
 				opacity: 1;
 				visibility: visible;
+				width: 100%;
 			}
 		}
 
