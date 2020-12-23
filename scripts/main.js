@@ -54,7 +54,7 @@ $(document).ready(function(e) {
 	})
 
 	$(document).scroll(function () {
-		var $nav = $(".main-nav");
+		var $nav = $(".main-nav-home");
 		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 	});
 

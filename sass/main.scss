@@ -4,6 +4,7 @@
 @import "slider";
 @import "components";
 @import "footer";
+@import "interna";
 
 @font-face {
     font-family: 'icomoon';
@@ -50,6 +51,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: "Montserrat",sans-serif;
 }
 
 ul{
