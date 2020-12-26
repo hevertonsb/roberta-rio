@@ -93,6 +93,43 @@ ul{
     }
 }
 
+.btn-add-bag{
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem;
+    color:$color-white;
+    background-color: $color-orange;
+    width: 25rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all .2s ease-in;
+    &:hover{
+        background-color: $color-blue;
+        color:$color-black;
+    }
+}
+
+.heart-swiper{
+    background-image: url(../images/svg/heart-off.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 2.6rem;
+    height: 2.1rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.heart-swiper.active{
+    background-image: url("../images/svg/heart-on.svg");
+}
+
+.swiper-pagination-bullet{
+    width: 1rem;
+    height: 1rem;
+}
+
 // HOME
 
 .meet-roberta{

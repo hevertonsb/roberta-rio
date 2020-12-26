@@ -335,18 +335,18 @@
     p{
         font-family: 'Montserrat', sans-serif;
     }
-    .heart-swiper{
-        background-image: url("../images/svg/heart-off.svg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        width: 2.6rem;
-        height: 2.1rem;
-        cursor: pointer;
-        // transition: all .3s ease-in;
-    }
-    .heart-swiper.active{
-        background-image: url("../images/svg/heart-on.svg");
-    }
+    // .heart-swiper{
+    //     background-image: url("../images/svg/heart-off.svg");
+    //     background-position: center center;
+    //     background-repeat: no-repeat;
+    //     width: 2.6rem;
+    //     height: 2.1rem;
+    //     cursor: pointer;
+    //     // transition: all .3s ease-in;
+    // }
+    // .heart-swiper.active{
+    //     background-image: url("../images/svg/heart-on.svg");
+    // }
 }
 
 // SUB FOOTER
