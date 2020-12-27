@@ -46,16 +46,15 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 	watchSlidesProgress: true
 });
 var galleryTop = new Swiper('.gallery-top', {
-	spaceBetween: 0,
+	spaceBetween: 10,
 	slidesPerView: 1,
-	// loop: true,
 	noSwiping: false,
 	centeredSlides: true,
 	effect: 'slide',
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
+	pagination: {
+        el: '.pagination-product',
+        clickable: true,
+    },
 	thumbs: {
 		swiper: galleryThumbs
 	}

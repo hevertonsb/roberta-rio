@@ -92,6 +92,9 @@
         color:#bbddcb;
         line-height: 6rem;
         letter-spacing: .08rem;
+        @media screen and (max-width: 400px){
+            font-size: 3rem;
+        }
         span{
             text-transform: uppercase;
             font-family: 'Montserrat', sans-serif;
@@ -99,6 +102,9 @@
             color:#d7b6c1;
             font-style: normal;
             font-weight: 300;
+            @media screen and (max-width: 400px){
+                font-size: 2rem;
+            }
         }
     }
 }
