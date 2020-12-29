@@ -123,6 +123,12 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    span{
+        font-family: 'Baskervville', serif;
+        font-size: 3rem;
+        font-style: italic;
+        margin-bottom: 18rem;
+    }
     h2{
         text-transform: uppercase;
         font-size: 6.1rem;
@@ -181,6 +187,7 @@
         grid-template-rows: 1fr;
         gap: 50px 0;
         div{
+            width: 100%;
             height: auto;
             overflow: hidden;
             margin: 0 auto;
