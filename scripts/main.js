@@ -60,9 +60,12 @@ var galleryTop = new Swiper('.gallery-top', {
 	}
 });
 
-$('.swiper-slide').on('mouseover', function() {
-	galleryTop.slideTo($(this).index());
-})
+
+if( $('.gallery-thumbs').length ){
+	$('.swiper-slide').on('mouseover', function() {
+		galleryTop.slideTo($(this).index());
+	})
+}
 
 // 2 of 2 : PHOTOSWIPE
 var initPhotoSwipeFromDOM = function(gallerySelector) {
