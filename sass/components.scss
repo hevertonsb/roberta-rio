@@ -1,3 +1,7 @@
+.no-responsive{
+    width: auto !important;
+}
+
 .btn{
     text-align: center;
     // padding:1rem;
@@ -127,7 +131,7 @@
         font-family: 'Baskervville', serif;
         font-size: 3rem;
         font-style: italic;
-        margin-bottom: 18rem;
+        margin-bottom: 15rem;
     }
     h2{
         text-transform: uppercase;
@@ -155,7 +159,7 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 1.2rem;
         font-weight: 400;
-        margin-bottom: 7rem;
+        margin-bottom: 6rem;
         width: auto;
         display: block;
         @media screen and (max-width: 780px){
