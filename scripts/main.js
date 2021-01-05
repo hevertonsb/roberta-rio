@@ -47,7 +47,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 	watchSlidesProgress: true
 });
 var galleryTop = new Swiper('.gallery-top', {
-	spaceBetween: 10,
+	spaceBetween: 5,
 	slidesPerView: 1,
 	noSwiping: false,
 	centeredSlides: true,
