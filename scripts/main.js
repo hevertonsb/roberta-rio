@@ -37,10 +37,11 @@ var mySwiper = new Swiper('.swiper-container', {
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
 	spaceBetween: 0,
-	slidesPerView: 2,
+	slidesPerView: 4,
 	direction: "vertical",
 	noSwiping: true,
 	freeMode: true,
+	// centeredSlides: true,
 	// loop: true,
 	watchSlidesVisibility: true,
 	watchSlidesProgress: true
