@@ -77,6 +77,7 @@ nav .wrapper .nav-content{
 
 .nav-links li a.menu-drop-active{
 	background: #9a785c;
+	color:#fff;
 }
 
 .nav-links .mobile-item{
@@ -156,6 +157,8 @@ nav .wrapper .nav-content{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	height: 445px;
+	max-height: 445px;
 }
 
 .content .row h3{
@@ -429,7 +432,8 @@ font-weight: 600;
 
 
 .scrolled{
-	background:rgba(0, 0, 0, .85);
+	// background:rgba(155, 155, 155, 1);
+	background: #fff;
 	.wrapper{
 		.logo{
 			.logo-main{
@@ -443,6 +447,14 @@ font-weight: 600;
 				visibility: visible;
 				width: 100%;
 			}
+		}
+
+		.nav-links li a{
+			color:#000;
+		}
+
+		.nav-links li a.menu-drop-active{
+			color:#fff;
 		}
 
 		.nav-links li:hover .drop-menu,
