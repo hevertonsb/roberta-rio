@@ -432,8 +432,8 @@ font-weight: 600;
 
 
 .scrolled{
-	// background:rgba(155, 155, 155, 1);
-	background: #fff;
+	background:rgba(0, 0, 0, .8);
+	// background: #fff;
 	.wrapper{
 		.logo{
 			.logo-main{
@@ -451,6 +451,7 @@ font-weight: 600;
 
 		.nav-links li a{
 			color:#000;
+			color:#fff;
 		}
 
 		.nav-links li a.menu-drop-active{
