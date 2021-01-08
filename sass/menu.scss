@@ -10,7 +10,7 @@ nav .wrapper{
 	position: relative;
 	max-width: 1300px;
 	max-width: 100%;
-	padding: 0px 20px;
+	padding: 0px 10px;
 	// height: 70px;
 	// line-height: 70px;
 	margin: auto;
@@ -30,7 +30,7 @@ nav .wrapper .logo{
 nav .wrapper .icons-nav{
 	display: flex;
 	a{
-		margin:0 1rem;
+		margin:0 .5rem;
 		height: 1.8rem;
 		width: 1.8rem;
 		overflow: hidden;
@@ -247,7 +247,7 @@ padding-left: 1rem;
 }
 
 .nav-links-inst  li a{
-	padding: 1rem 0 0;
+	padding: .5rem 0 0;
 	display: block;
 	font-size: 20px;
 	text-decoration: none;
@@ -462,5 +462,53 @@ font-weight: 600;
 		.nav-links li:hover .mega-box , .mega-box{
 			top:27px;
 		}
+	}
+}
+
+.nav-itens-mobile{
+	display: none;
+}
+
+@media screen and (max-width: 970px) {
+	.nav-itens-mobile{
+		display: block;
+	}
+
+	.page-interna .main-nav .wrapper{
+		flex-direction: row;
+		position: relative;
+	}
+
+	.page-interna .main-nav{
+		height: 90px;
+		.wrapper{
+			height: inherit;
+			.logo{
+				position: relative;
+    			left: 2rem;
+			}
+		}
+	}
+
+	.page-interna .container-int{
+		top:90px;
+	}
+
+	.hamburguer-mobile{
+		position: absolute;
+		left: 1rem;
+	}
+}
+
+@media screen and (min-width: 971px) {
+	.page-interna .main-nav{
+		height: 115px;
+		.wrapper{
+			height: inherit;
+		}
+	}
+
+	.page-interna .container-int{
+		top:115px;
 	}
 }
