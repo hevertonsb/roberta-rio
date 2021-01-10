@@ -27,10 +27,7 @@
                     </a>
                 </div>
                 <div class="nav-content">
-                    <input type="radio" name="slider" id="menu-btn">
-                    <input type="radio" name="slider" id="close-btn">
                     <ul class="nav-links">
-                        <label for="close-btn" class="btn close-btn"></label>
                         <li>
                             <a href="#" class="desktop-item menu-drop">Shop</a>
                             <input type="checkbox" id="showMega">
@@ -69,18 +66,72 @@
                                 </div>
                             </div>
                         </li>
+                    </ul>
+
+                    <input type="radio" name="slider" id="menu-btn-inst">
+                    <input type="radio" name="slider" id="close-btn-inst">
+
+                    <ul class="nav-links-inst">
+                        <label for="close-btn-inst" class="btn close-btn-inst"></label>
                         <li><a href="#">Meet Roberta</a></li>
                         <li><a href="#">Collections</a></li>
                         <li><a href="#">The Store</a></li>
                         <li><a href="#">Press</a></li>
                         <li><a href="#">Contact</a></li>
+
+                        <div class="nav-itens-mobile">
+                            <li>
+                                <a href="#" class="desktop-item menu-drop">
+                                    <label for="showMegaMobile" class="mobile-item">Shop</label>
+                                </a>
+                                <input type="checkbox" id="showMegaMobile">
+                                <!-- clone .mega-box, exibido apenas na versão mobile -->
+                                <div class="mega-box">
+                                    <div class="content">
+                                        <div class="row box-jleft">
+                                            <h3>Joias</h3>
+                                            <ul class="mega-links">
+                                                <li><a href="" data-filename="bloom-01.jpg">brincos</a></li>
+                                                <li><a href="" data-filename="bloom-02.jpg">pingente</a></li>
+                                                <li><a href="" data-filename="bloom-03.jpg">aneis</a></li>
+                                                <li><a href="" data-filename="bloom-04.jpg">alianças</a></li>
+                                                <li><a href="" data-filename="bloom-01.jpg">colares</a></li>
+                                                <li><a href="" data-filename="bloom-02.jpg">one of a kind</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <h3>Coleções</h3>
+                                            <ul class="mega-links">
+                                                <li><a href="#" data-filename="bloom-01.jpg">marrocos</a></li>
+                                                <li><a href="#" data-filename="bloom-03.jpg">fragmentos</a></li>
+                                                <li><a href="#" data-filename="bloom-02.jpg">origens</a></li>
+                                                <li><a href="#" data-filename="bloom-01.jpg">fire spell</a></li>
+                                                <li><a href="#" data-filename="bloom-03.jpg">bloom</a></li>
+                                                <li><a href="#" data-filename="bloom-02.jpg">jardim particular</a></li>
+                                                <li><a href="#" data-filename="bloom-01.jpg">power</a></li>
+                                                <li><a href="#" data-filename="bloom-02.jpg">encontros</a></li>
+                                                <li><a href="#" data-filename="bloom-02.jpg">solei</a></li>
+                                                <li><a href="#" data-filename="bloom-03.jpg">amuletos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row image-box">
+                                            <img src="images/slides/slide-htr.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
                     </ul>
                 
                     <div class="icons-nav">
                         <a href="#"><img src="images/svg/sacola.svg" alt=""></a>
                         <a href="#"><img src="images/svg/perfil.svg" alt=""></a>
+                        <a href="#" class="hamburguer-mobile">
+                            <label for="menu-btn-inst">
+                                <img src="images/svg/menu-hamburguer-in-white.svg" alt="">
+                            </label>
+                        </a>
                     </div>
-                    <label for="menu-btn" class="btn menu-btn"><img src="images/svg/menu-hamburguer.svg" alt=""></label>
                 </div> 
             </div>
         </nav>
@@ -90,7 +141,7 @@
             <div class="slider-control right"></div>
             <ul class="slider-pagi"></ul>
 
-            <!-- add slider-default or slider-htr -->
+            <!-- Duas versões para o slider -> slider-default ou slider-htr -->
             <div class="slider slider-default">
 
                 <div class="slide slide-0 active">
