@@ -54,6 +54,32 @@
     }
 }
 
+.box-title-main{
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 0 5%;
+    h2{
+        font-size: 6rem;
+        color:$color-green;
+        font-family: 'Baskervville', serif;
+        font-style: italic;
+        font-weight: normal;
+        letter-spacing: .4rem;
+        word-spacing: 1rem;
+        text-transform: uppercase;
+        margin:0;
+        @media screen and (max-width: 600px){
+            font-size: 4rem;
+        }
+    }
+    span{
+        font-size: 2.6rem;
+        font-family: "Montserrat",sans-serif;
+        margin-left: 5.2rem;
+        color: $color-orange;
+    }
+}
+
 @keyframes arrow-pulse {
     0% {
         left: 40px;
@@ -382,6 +408,27 @@
         @media screen and (min-width: 900px){
             justify-content: space-around;
             flex-direction: row;
+        }
+    }
+}
+
+.made-component{
+    text-align: center;
+    font-family: "Baskervville",serif;
+    font-size: 3.3rem;
+    color: $color-green;
+    font-style: italic;
+    p{
+        img{
+            position: relative;
+            top: 1rem;
+            margin: 0 .5rem;
+            width: 4.8rem;
+            height: 3.8rem;
+        }
+        span{
+            color: #c2a0e5;
+            font-style: normal;
         }
     }
 }
