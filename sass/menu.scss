@@ -18,7 +18,7 @@ nav .wrapper{
 	align-items: center;
 	justify-content: space-between;	
 	@media screen and (min-width: 970px) {
-		padding: 0px 20px;
+		padding: 0px 30px;
 	}
 }
 
@@ -32,6 +32,7 @@ nav .wrapper .logo{
 
 nav .wrapper .icons-nav{
 	display: flex;
+	align-items: center;
 	a{
 		margin:0 .5rem;
 		height: 1.8rem;
@@ -49,6 +50,11 @@ nav .wrapper .icons-nav{
 	}
 }
 
+nav .wrapper .icons-nav .hamburguer-mobile{
+	width: 2rem;
+	height: 2rem;
+}
+
 .hamburguer-mobile img{
 	cursor: pointer;
 }
@@ -56,6 +62,8 @@ nav .wrapper .icons-nav{
 nav .wrapper .nav-content{
 	display: flex;
 	align-items: center;
+	align-self: flex-start;
+    margin-top: 4rem;
 }
 
 .wrapper .nav-links{
@@ -99,7 +107,7 @@ nav .wrapper .nav-content{
 	background: #9a785c;
 	width: 180px;
 	line-height: 45px;
-	top: 90px;
+	top: 65px;
 	opacity: 0;
 	visibility: hidden;
 	box-shadow: 0 6px 10px rgba(0,0,0,0.15);
@@ -108,7 +116,7 @@ nav .wrapper .nav-content{
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box{
 	transition: all 0.3s ease;
-	top: 90px;
+	top: 65px;
 	opacity: 1;
 	visibility: visible;
 }
@@ -167,8 +175,8 @@ nav .wrapper .nav-content{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	height: 445px;
-	max-height: 445px;
+	height: 325px;
+	max-height: 325px;
 }
 
 .content .row h3{
@@ -239,14 +247,16 @@ padding-left: 1rem;
 	max-width: 350px;
 	top: 0;
 	z-index: 2;
-	left: -100%;
-	background: #242526;
-	display: block;
+	// left: -350px;
+	right: -350px;
+	background: $color-white;
+	// display: block;
+	display: none;
 	padding: 5rem 2rem;
 	line-height: 50px;
 	overflow-y: auto;
 	box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
-	transition: all 0.3s ease;
+	transition: all .65s ease;
 	.btn{
 		display: block;
 	}
@@ -260,14 +270,46 @@ padding-left: 1rem;
 .nav-links-inst  li a{
 	padding: .5rem 0 0;
 	display: block;
-	font-size: 20px;
+	font-size: 2.25rem;
 	text-decoration: none;
-	color:$color-white;
+	color:$color-green;
 	text-transform: uppercase;
+	margin-left: 3rem;
+	font-family: "Baskervville",serif;
+	transition: transform 0.2s;
+	&:hover{
+		font-style: italic;
+    	transform: translate3d(2rem,0,0);
+    	color: $color-orange;
+		&:before{
+			opacity: 1;
+		}
+		// &:after{
+		// 	content: '';
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: -5.5rem;
+		// 	right: 0;
+		// 	height: 100%;
+		// }
+	}
+	&:before{
+		content: '';
+		top: 55%;
+		width: 3.5rem;
+		height: 1px;
+		background: currentColor;
+		position: absolute;
+		right: calc(100% + 2rem);
+		opacity: 0;
+		pointer-events: none;
+	}
 }
 
 #menu-btn-inst:checked ~ .nav-links-inst{
-	left: 0%;
+	// left: 0px;
+	right: 0px !important;
+	display: block !important;
 }
 // #menu-btn-inst:checked ~ .btn.menu-btn{
 // 	display: block;
@@ -372,9 +414,9 @@ padding-left: 1rem;
 	border-radius: 5px;
 	transition: all 0.3s ease;
 }
-.nav-links .mobile-item:hover{
-	// background: #3A3B3C;
-}
+// .nav-links .mobile-item:hover{
+// 	// background: #3A3B3C;
+// }
 .drop-menu li{
 	margin: 0;
 }
@@ -404,6 +446,11 @@ padding-left: 1rem;
 	// margin-bottom: 15px;
 	border-top: 1px solid rgba(255,255,255,0.08);
 }
+
+.mega-box .content .image-box{
+	display: none;
+}
+
 .mega-box .content .row:nth-child(1),
 .mega-box .content .row:nth-child(2){
 	border-top: 0px;
@@ -453,7 +500,8 @@ font-weight: 600;
 
 
 .scrolled{
-	background:rgba(0, 0, 0, .8);
+	// background:rgba(0, 0, 0, .8);
+	background: rgba(170,96,59,.8);
 	// background: #fff;
 	.wrapper{
 		.logo{
@@ -466,8 +514,12 @@ font-weight: 600;
 				display: block;
 				opacity: 1;
 				visibility: visible;
-				width: 100%;
+				// width: 100%;
 			}
+		}
+
+		.nav-content{
+			margin-top: 0;
 		}
 
 		.nav-links li a{
@@ -523,13 +575,51 @@ font-weight: 600;
 
 @media screen and (min-width: 971px) {
 	.page-interna .main-nav{
-		height: 115px;
+		height: 90px;
 		.wrapper{
 			height: inherit;
 		}
 	}
 
 	.page-interna .container-int{
-		top:115px;
+		top:90px;
+	}
+}
+
+.page-interna .main-nav .wrapper .nav-content{
+	margin-top: 0;
+	align-self: center;
+}
+
+.sub-menu-drop{
+	opacity: 0;
+	visibility: hidden;
+	max-height: 0px;
+	transition: all .3s ease;
+	margin-bottom: 1rem;
+	li{
+		// margin-left: 1rem;
+		line-height: 30px;
+		a{
+			font-size: 1.6rem;
+			text-transform: lowercase;
+		}
+	}
+}
+
+.sub-menu-drop-open{
+	opacity: 1;
+	visibility: visible;
+	max-height: 100%;
+	transition: all .19s ease;
+}
+
+@media screen and (max-width: 970px) {
+	.nav-links-inst li .item-menu-drop{
+		display: none;
+	}
+
+	.page-interna .nav-links-inst li .item-menu-drop{
+		display: block;
 	}
 }

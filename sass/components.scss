@@ -374,9 +374,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:.5rem 1.25rem;
+    padding: .5rem 1.5rem;
+    width: auto;
     p{
         font-family: 'Montserrat', sans-serif;
+        font-size: 1.25rem;
     }
     // .heart-swiper{
     //     background-image: url("../images/svg/heart-off.svg");
@@ -429,6 +431,103 @@
         span{
             color: #c2a0e5;
             font-style: normal;
+        }
+    }
+}
+
+#toTop {
+    // padding: 5px 3px;
+    background: rgba(170,96,59,.7);
+    color: #fff;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    transform: rotate(-180deg);
+    transition: all .3s ease;
+    @media screen and (max-width: 600px){
+        bottom: 1rem;
+        right: 1rem;
+    }
+    &:hover{
+        background: rgba(170,96,59,.9);
+        transform: rotate(180deg);
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    span{
+      background: url('../images/svg/arrow-up.svg') no-repeat center center;
+      width: inherit;
+      height: inherit;
+      display: inline-block;
+    }
+}
+
+.image-grid{
+    max-width: 110rem;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem 4rem;
+    img{
+        width: 100%;
+    }
+
+    @media screen and (min-width: 700px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.footer-store{
+    text-align: center;
+    margin: auto;
+    .store-address{
+        color:$color-green;
+        font-family: "Baskervville",serif;
+        font-style: italic;
+        font-size: 2.73rem;
+        margin: .5rem;
+    }
+
+    .store-city{
+        font-size: 2.48rem;
+        color:#ae8190;
+        text-transform: uppercase;
+        margin: .5rem;
+        padding-bottom: 15rem;
+        @media screen and (max-width: 600px){
+            font-size: 2.2rem;
+        }
+    }
+}
+
+.item-menu-drop, .menu-drop{
+    position: relative;
+    &:after{
+        content: '';
+        width: 2.5rem;
+        height: 2.5rem;
+        position: absolute;
+        background: url('../images/svg/arrow-down-menu.svg') no-repeat;
+        top:30%;
+        // right:8.5rem;
+    }
+    &:hover{
+        &:after{
+            background: url('../images/svg/arrow-down-menu-hover.svg') no-repeat;
+        }
+    }
+}
+
+@media screen and (min-width: 970px){
+    .menu-drop{
+        &:after{
+            display: none;
         }
     }
 }

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="arrow-up.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="16.8125"
+     inkscape:cx="16"
+     inkscape:cy="16"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14"
+     inkscape:document-rotation="0" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:none;}</style>
+  </defs>
+  <title
+     id="title6" />
+  <g
+     data-name="Layer 2"
+     id="Layer_2"
+     transform="matrix(0.6895257,0,0,0.61948718,4.9675888,6.0874298)"
+     style="fill:#ffffff">
+    <path
+       d="m 16,21 a 1,1 0 0 1 -0.71,-0.29 l -8,-8 a 1.0040916,1.0040916 0 1 1 1.42,-1.42 l 7.29,7.3 7.29,-7.3 a 1.0040916,1.0040916 0 0 1 1.42,1.42 l -8,8 A 1,1 0 0 1 16,21 Z"
+       id="path8"
+       style="fill:#ffffff" />
+  </g>
+  <g
+     id="frame">
+    <rect
+       class="cls-1"
+       height="32"
+       width="32"
+       id="rect11" />
+  </g>
+</svg>

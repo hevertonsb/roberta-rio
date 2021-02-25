@@ -1,3 +1,28 @@
+// function subscribeModal() {
+// 	$('.subscribe-mmodal').addClass('is-active');
+
+// 	if($('.subscribe-mmodal').hasClass('is-active')){		
+// 		$("body").addClass("modal-open");
+// 	}	
+
+// 	$(".subscribe-mmodal-close").on('click', function() {
+// 		$('.subscribe-mmodal').removeClass('is-active');
+// 		$("body").removeClass("modal-open");
+// 	});
+
+// 	$(".subscribe-mmodal").on('click', function(e){
+// 		if (e.target !== this){
+// 			e.stopPropagation();
+// 			return;
+// 		} else{
+// 			$('.subscribe-mmodal').removeClass('is-active');
+// 			$("body").removeClass("modal-open");
+// 		}
+// 	})
+// }
+
+// subscribeModal();
+
 if( $('.swiper-container').length ){
 
 	var mySwiper = new Swiper('.swiper-container', {
@@ -68,6 +93,7 @@ if( $('.gallery-top').length ){
 		}
 	});
 }
+
 
 if( $('.gallery-thumbs').length ){
 	$('.swiper-slide').on('mouseover', function() {
@@ -307,6 +333,17 @@ initPhotoSwipeFromDOM(".my-gallery");
 
 $(document).ready(function(e) {
 
+	// $(document).click(function(){
+	// 	if($('.nav-links-inst').is(":visible")){
+	// 		console.log('menu visivel')
+	// 		$("input[name='slider']").attr("checked", false);
+	// 		// $('#menu-btn-inst').prop('checked', false);
+	// 	} else {
+	// 		console.log('menu invisivel')
+	// 		// $('#close-btn-inst').prop('checked', false);
+	// 	}
+	// })
+
 	function subscribeModal() {
 		$('.subscribe-mmodal').addClass('is-active');
 	
@@ -367,9 +404,9 @@ $(document).ready(function(e) {
 		}
 	})
 
-	// $('.item-menu-drop').click(function(e){
-	// 	e.preventDefault();
-	// })
+	$('.item-menu-drop').click(function(e){
+		e.preventDefault();
+	})
 
 	$('.heart-swiper').click(function(e){
 		e.preventDefault();
@@ -393,8 +430,7 @@ $(document).ready(function(e) {
 		$('.menu-drop').removeClass('menu-drop-active')
 	})
 
-	$('.item-menu-drop').on('click', function(e){
-		e.preventDefault();
+	$('.item-menu-drop').on('click', function(){
 		$(this).next().toggleClass('sub-menu-drop-open');
 	})
 
@@ -421,5 +457,5 @@ $(document).ready(function(e) {
   		lensShape: "round",
   		lensSize: 200
 	});
-
+	
 })
