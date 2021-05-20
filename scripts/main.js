@@ -307,6 +307,19 @@ initPhotoSwipeFromDOM(".my-gallery");
 
 $(document).ready(function(e) {
 
+	// var table = $(".table-main");
+
+    // $(window).scroll(function() {
+    //     var windowTop = $(window).scrollTop();
+
+    //     if (windowTop > table.offset().top + (-100)) {
+    //         $("thead", table).addClass("Fixed").css("top", windowTop);
+    //     }
+    //     else {
+    //         $("thead", table).removeClass("Fixed");
+    //     }
+    // });
+
 	function subscribeModal() {
 		$('.subscribe-mmodal').addClass('is-active');
 	

@@ -15,6 +15,7 @@
     <link href="css/photoswipe/photoswipe.min.css" rel="stylesheet" />
     <link href="css/photoswipe/default-skin.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5fb2db144f148e0012a5b984&product=inline-share-buttons' async='async'></script>
 </head>
 
 <body>
@@ -59,7 +60,7 @@
                         </li>
                         <li><a href="store.html">The Store</a></li>
                         <li><a href="press.html">Press</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
 
                         <!-- menu clone .nav-links, exibido apenas na versão mobile -->
                         <div class="nav-itens-mobile">
@@ -168,7 +169,11 @@
                         <h2>Nome da peça</h2>
                         <h3>sub-título peça</h3>
 
-                        <p class="value-product">R$ 8.989,99</p>
+                        <div class="link-product">
+                            <p class="value-product">R$ 8.989,99</p>
+                            <i class="heart-swiper"></i>
+                        </div>
+                        <!-- <p class="value-product">R$ 8.989,99</p> -->
 
                         <select>
                             <option selected disabled>select size</option>
@@ -184,12 +189,30 @@
                         <h4>Descrição</h4>
                         <p class="desc-product">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque omnis cumque, dolores optio.</p>
 
+                        <!-- <h4>Cuidado</h4>
+                        <p class="desc-product">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque omnis cumque, dolores optio.</p> -->
+
                         <a href="" class="btn-add-bag">Add to bag</a>
 
-                        <div class="link-product">
+                        <a href="" class="btn-add-bag btn-opacity">Enquire</a>
+
+                        <div class="tooltip">Share
+                            <span class="tooltiptext">
+                              <div class="sharethis-inline-share-buttons"></div>
+                            </span>
+                          </div>
+
+                        <!-- <div class="link-product">
                             <a href="">add to wishlist</a>
                             <i class="heart-swiper"></i>
-                        </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="text-bottom-product">
+                        <h4>Cuidados</h4>
+                        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque omnis cumque, dolores optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, voluptatem ipsa. Illum laudantium laboriosam repudiandae perspiciatis a libero ex pariatur quibusdam odio alias, aut totam atque facere aliquam adipisci laborum?</p>
                     </div>
                 </div>
             </section>
@@ -356,13 +379,17 @@
                     <p>Copyright 2020 © Roberta do Rio | All rights reserved</p>
                 </div>
                 <div>
-                    <p>Rua Garcia d'Avila 149, sl - Ipanema - Rio de Janeiro / 21 3259</p>
+                    <p>Rua Garcia d'Avila 149, sl - Ipanema - Rio de Janeiro / 21 3259 7437</p>
                 </div>
             </div>
         </section>
 
-        <div id="toTop">
+         <div id="toTop">
             <span></span>
+        </div>
+
+        <div id="btn-book">
+            <a href=""><img src="images/book-an-appointment.png" alt=""></a>
         </div>
 
     </div>

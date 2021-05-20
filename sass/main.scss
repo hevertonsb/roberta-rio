@@ -38,6 +38,10 @@
     content: "\e901";
 }
 
+.icon-whatsapp:before {
+    content: "\ea93";
+}
+
 *,
 *::before,
 *::after {
@@ -110,6 +114,7 @@ ul{
     font-size: 1.2rem;
     font-weight: bold;
     transition: all .2s ease-in;
+    margin-bottom: .5rem;
     &:hover{
         background-color: $color-blue;
         color:$color-black;
@@ -187,8 +192,10 @@ ul{
                         font-style: normal;
                     }
                     @media screen and (min-width: 900px){
-                        width: 350px;
+                        width: 550px;
                         margin: 8rem auto;
+                        line-height: 4rem;
+                        font-size: 2rem;
                     }
                 }
                 @media screen and (min-width: 900px){

@@ -30,6 +30,7 @@ svg {
 	transition: opacity 0.3s;
 	will-change: opacity;
 	opacity: 0;
+	// display: none;
 
 	&.inactive:hover {
 		cursor: auto;
@@ -262,8 +263,9 @@ svg {
 	// color: #fff;
 	transition: transform 0.5s 0.8s, opacity 0.5s 0.8s;
 	will-change: transform, opacity;
-	transform: translateY(-50%);
-	opacity: 0;
+	// transform: translateY(-50%);
+	// opacity: 0;
+	width: fit-content;
 
 	@include mediaMaxWidth(991px) {
 	  left: 0;
@@ -386,10 +388,11 @@ svg {
 						display: block;
 						margin-right: 8rem;
 						width: 365px;
-						height: 545px;
-						img{
+						height: 505px;
+						img, video{
 							width: 90%;
-							height: auto;
+							height: 100%;
+							object-fit: cover;
 						}
 						// @media screen and (min-width: 900px){
 						// 	margin-right: 8rem;
@@ -399,6 +402,7 @@ svg {
 					.txt-slide{
 						width: 40%;
 						text-align: left;
+						padding-top: 5rem;
 					}
 				}
 			}
