@@ -90,13 +90,13 @@ nav .wrapper .nav-content{
 }
 
 .nav-links li a.menu-drop:hover{
-	color: #9a785c;
-	background-color: #fff;
+	// color: #9a785c;
+	background-color:#9a785c;
 }
 
 .nav-links li a.menu-drop-active{
-	color: #9a785c;
-	background-color: #fff;
+	// color: #9a785c;
+	background-color: #9a785c;
 }
 
 .nav-links .mobile-item{
@@ -141,8 +141,8 @@ nav .wrapper .nav-content{
 }
 
 .mega-box .content{
-	// background: #9a785c;
-	background: #fff;
+	background: #9a785c;
+	// background: #fff;
 	// padding: 25px 20px;
 	display: flex;
 	width: 100%;
@@ -183,6 +183,7 @@ nav .wrapper .nav-content{
 
 .content .row h3{
 	color: #665d52;
+	color:#fff;
 	font-size: 1.6rem;
 	font-family: 'Baskervville', serif;
 	font-weight: 500;
@@ -204,7 +205,8 @@ nav .wrapper .nav-content{
 
 .row .mega-links li a{
 	padding: .25rem 0;
-	color: #665d52;
+	// color: #665d52;
+	color:#fff;
 	font-size: 1.3rem;
 	display: block;
 	text-transform: none;

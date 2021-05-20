@@ -148,7 +148,7 @@ svg {
 	  fill: $color-green;
 	}
 
-	@include mediaMaxWidth(991px) {
+	@include mediaMaxWidth(1200px) {
 	  .slide__text {
 		background-color: rgba($color-green, 0.8);
 		// background-color: $color-orange;
@@ -167,7 +167,7 @@ svg {
 	  fill: $color-blue;
 	}
 
-	@include mediaMaxWidth(991px) {
+	@include mediaMaxWidth(1200px) {
 	  .slide__text {
 		background-color: rgba($color-blue, 0.8);
 	  } 
@@ -185,7 +185,7 @@ svg {
 	  fill:$color-pink;
 	}
 
-	@include mediaMaxWidth(991px) {
+	@include mediaMaxWidth(1200px) {
 	  .slide__text {
 		background-color: rgba($color-pink, 0.8);
 	  } 
@@ -203,7 +203,7 @@ svg {
 	  fill: $color-orange;
 	}
 
-	@include mediaMaxWidth(991px) {
+	@include mediaMaxWidth(1200px) {
 	  .slide__text {
 		background-color: rgba($color-orange, 0.8);
 	  } 
@@ -244,8 +244,7 @@ svg {
 	transform: translate3d(-20%, 0, 0);
 	opacity: 0;
 	
-
-	@include mediaMaxWidth(991px) {
+	@include mediaMaxWidth(1200px) {
 	  display: none;
 	}
 
@@ -267,7 +266,7 @@ svg {
 	// opacity: 0;
 	width: fit-content;
 
-	@include mediaMaxWidth(991px) {
+	@include mediaMaxWidth(1200px) {
 	  left: 0;
 	  bottom: 0;
 	  width: 100%;
@@ -282,7 +281,7 @@ svg {
 	  font-size: 5rem;
 	  margin-bottom: 2rem;
 	  
-	  @include mediaMaxWidth(991px) {
+	  @include mediaMaxWidth(1200px) {
 		line-height: 20rem;
 		font-size: 3.5rem;
 	  }
@@ -292,7 +291,7 @@ svg {
 	  font-size: 1.8rem;
 	  margin-bottom: 1.5rem;
 
-	  @include mediaMaxWidth(991px) {
+	  @include mediaMaxWidth(1200px) {
 		display: none;
 	  }
 	}
@@ -306,7 +305,7 @@ svg {
 	  font-size: 2.3rem;
 	  perspective: 1000px;
 	  
-	  @include mediaMaxWidth(991px) {
+	  @include mediaMaxWidth(1200px) {
 		display: none;
 	  }
 
@@ -342,7 +341,7 @@ svg {
 				display: none;
 			}
 		}
-		@include mediaMaxWidth(991px) {
+		@include mediaMaxWidth(1200px) {
 			.slide__text {
 				background-color: transparent;
 			} 
@@ -351,7 +350,7 @@ svg {
 }
 
 .slider-htr{
-	@media screen and (max-width: 1023px){
+	@media screen and (max-width: 1200px){
 		.slide{
 			.img-slide{
 				display:none;
@@ -363,7 +362,7 @@ svg {
 	}
 	
 	.slide{
-		@media screen and (min-width: 1024px){
+		@media screen and (min-width: 1200px){
 			&__bg{
 				background-position: 30rem 0;
 			}
@@ -402,7 +401,7 @@ svg {
 					.txt-slide{
 						width: 40%;
 						text-align: left;
-						padding-top: 5rem;
+						padding-top: 10rem;
 					}
 				}
 			}
