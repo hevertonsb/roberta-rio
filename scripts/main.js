@@ -389,10 +389,10 @@ $(document).ready(function(e) {
 		$(this).toggleClass('active');
 	})
 
-	$('.link-product a').click(function(e){
-		e.preventDefault();
-		$(this).next().toggleClass('active')
-	})
+	// $('.link-product a').click(function(e){
+	// 	e.preventDefault();
+	// 	$(this).next().toggleClass('active')
+	// })
 	
 	$('.menu-drop').on('mouseenter', function(event){
 		$(this).addClass('menu-drop-active')
